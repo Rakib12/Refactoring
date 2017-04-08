@@ -9,9 +9,7 @@ public class Refactorable {
 		double outstanding = 0.0;
 		
 		// print banner
-		System.out.println("*************************");
-		System.out.println("***** Customer Owes *****");
-		System.out.println("*************************");
+		printBanner();
 		
 		// calculate outstanding
 		while(e.hasMoreElements()){
@@ -24,4 +22,11 @@ public class Refactorable {
 		System.out.println("Amount : " + outstanding);
 	}
 
+	private void printBanner() {
+		System.out.println("*************************");
+		System.out.println("***** Customer Owes *****");
+		System.out.println("*************************");
+	}
+
 }
+
